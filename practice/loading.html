@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Loading動畫</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    .container {
+      width: 200px;
+      height: 100px;
+      margin: 100px auto;
+    }
+
+    .bar {
+      width: 90px;
+      height: 10px;
+      border-radius: 50px;
+      margin: 10px auto;
+      background-color: aliceblue;
+    }
+
+    p {
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+      animation: show 1s infinite alternate;
+    }
+
+    .bar:nth-child(1) {
+      background-color: darkgreen;
+      animation: right 0.5s infinite ease-in-out alternate;
+    }
+
+    .bar:nth-child(2) {
+      background-color: darkblue;
+      animation: left 0.48s infinite ease-in-out alternate;
+    }
+
+    .bar:nth-child(3) {
+      background-color: darkred;
+      animation: right 0.55s infinite ease-in-out alternate;
+    }
+
+    .bar:nth-child(4) {
+      background-color: darkgoldenrod;
+    }
+
+    .bar:nth-child(5) {
+      background-color: blueviolet;
+      animation: left 0.55s infinite ease-in-out alternate;
+    }
+
+    .bar:nth-child(6) {
+      background-color: darkorange;
+      animation: right 0.44s infinite ease-in-out alternate;
+    }
+
+    @keyframes right {
+      from {
+        transform: translateX(-15px);
+      }
+
+      to {
+        transform: translateX(15px);
+      }
+    }
+
+    @keyframes left {
+      from {
+        transform: translateX(15px);
+      }
+
+      to {
+        transform: translateX(-15px);
+      }
+    }
+
+    @keyframes show {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <p>Loading...</p>
+  </div>
+  <img src="./img/loading.svg" alt="">
+</body>
+
+</html>

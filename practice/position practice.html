@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position practice</title>
+  <style>
+    .box1,
+    .box2,
+    .box4 {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box3 {
+      width: 500px;
+      height: 500px;
+      background-color: cornflowerblue;
+      position: relative;
+    }
+
+    .box1 {
+      background-color: tomato;
+      position: fixed;
+      right: 0;
+      bottom: 10px;
+      z-index: 4;
+    }
+
+    .box2 {
+      background-color: blueviolet;
+      position: absolute;
+      bottom: 0%;
+      right: 100px;
+      z-index: 3;
+
+    }
+
+    .box4 {
+      background-color: aquamarine;
+      position: absolute;
+      right: 10%;
+      top: 25%;
+      z-index: 2;
+    }
+
+    .box5 {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      position: absolute;
+      right: 12%;
+      top: 20%;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3">
+    <div class="box4"></div>
+    <div class="box5"></div>
+  </div>
+
+</body>
+
+</html>

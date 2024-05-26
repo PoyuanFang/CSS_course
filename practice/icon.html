@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>偽元素icon</title>
+  <style>
+    .menu{
+      width: 3em;
+      height: 3em;
+      background-color: brown;
+      cursor: pointer;
+      margin: 5em auto;
+      position: relative;
+    }
+    .menu::after{
+      content: "";
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      width: 1em;
+      height: 0.2em;
+      border-top: 0.6em double #fff;
+      border-bottom: 0.2em solid #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu"></div>
+</body>
+</html>

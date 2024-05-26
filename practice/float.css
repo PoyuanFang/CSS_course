@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 1px solid grey;
+}
+
+#logo {
+  float: left;
+  margin-left: 20px;
+}
+
+#logo img {
+  width: 80px;
+}
+
+nav {
+  float: right;
+  line-height: 60px;
+  margin-top: 10px;
+}
+
+nav>ul>li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav>ul>li>a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Noto Serif TC", serif;
+}
+
+nav>ul>li>a:hover {
+  color: tomato;
+}
+
+.clear-both {
+  clear: both;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Noto Serif TC", serif;
+}
+
+.container {
+  margin: auto;
+  padding: 3rem 0;
+  width: 960px;
+  overflow: hidden;
+}
+
+.item {
+  width: 300px;
+  margin-right: 20px;
+  text-align: center;
+  color: #fff;
+  float: left;
+}
+
+.item img {
+  width: 280px;
+  margin: 10px;
+}
+
+.item p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: "Noto Serif TC", serif;
+}
+
+.news-item {
+  display: block;
+  overflow: hidden;
+  line-height: 50px;
+  border-bottom: 1px dashed #333;
+}
+
+.date,
+.title {
+  float: left;
+  margin-right: 30px;
+}
+
+.title {
+  font-family: "Noto Serif TC", serif;
+}
+
+.date {
+  font-family: "Kode Mono", monospace;
+  font-weight: 700px;
+}
+
+
+.item:nth-child(1) {
+  background-color: rgb(19, 98, 233);
+}
+
+.item:nth-child(2) {
+  background-color: tomato;
+}
+
+.item:nth-child(3) {
+  background-color: lightseagreen;
+}
+
+section {
+  padding-top: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  background-color: black;
+}

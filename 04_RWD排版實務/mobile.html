@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手機先決</title>
+  <style>
+    /* 全域 */
+    #nav {
+      width: 100%;
+      height: 100px;
+      background-color: cornflowerblue;
+    }
+
+    /* 平板 */
+    @media screen and(min-width:768px) {
+      #nav {
+        width: 80%;
+        margin: auto;
+        background-color: tomato;
+      }
+    }
+
+    /* 電腦 */
+    @media screen and(min-width:1023px) {
+      #nav{
+        background-color: cadetblue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav"></div>
+</body>
+
+</html>
